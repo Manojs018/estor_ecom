@@ -1,0 +1,25 @@
+{
+    "functions": {
+        "api/**/*.php": {
+            "runtime": "vercel-php@0.9.0"
+        }
+    },
+    "routes": [
+        {
+            "src": "/assets/(.*)",
+            "dest": "/public/assets/$1"
+        },
+        {
+            "src": "/(index|products|product|login|register|logout|checkout|orders|wishlist|seed|admin_products|admin_edit_product|admin_delete_product|admin_orders|admin_update_order|save_product|toggle_wishlist|place_order|update_order_status|delete_product)\\.php(.*)",
+            "dest": "/api/$1.php$2"
+        },
+        {
+            "src": "/",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/$1"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "chethanac15/estore_xamp",
+  "description": "Premium Electronics Store",
+  "require": {
+    "php": ">=8.1"
+  }
+}

@@ -1,0 +1,22 @@
+# Dependencies
+/vendor
+composer.lock
+
+# Configuration
+.env
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# XAMPP / Local Server
+logs/
+tmp/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Database exports (if any)
+*.sql
